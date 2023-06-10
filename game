@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+    int points = 0;
+    int answer [3];
+    
+    cout << "type the missing number in secuences: \n ";
+    
+    cout << "secuenc1 : 1, 1, 2, 3, ??? \n ";
+    cin >> answer[0];
+    
+    cout << "secuenc2 : 2, 4, 8, 16, ??? \n ";
+    cin >> answer[1];
+    
+    cout << "secuenc3 : 2, 7, 12, 17, ??? \n ";
+    cin >> answer[2];
+    
+    int secuences [3][5]= 
+    {
+        {1, 1, 2, 3, 5},
+        {2, 4, 8, 16, 32},
+        {2, 7, 12, 17, 22}
+    };
+    
+    if (answer[0] == secuences [0][4])
+    {
+        points++;
+    }
+    
+    
+     if (answer[1] == secuences [1][4])
+    {
+        points++;
+    }
+    
+    
+     if (answer[2] == secuences [2][4])
+    {
+        points++;
+    }
+    
+     cout << " your points is " << points << " from 3 " ;
+    
+    return 0;
+}
